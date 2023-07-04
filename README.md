@@ -1,2 +1,2 @@
 # ateebsrepsitory
-recorrd of my codes
+record of my codes
