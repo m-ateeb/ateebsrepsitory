@@ -1,0 +1,114 @@
+'''create a program capable of displaying questions to users like kon bny ga crorepati
+use list data type to store the questions and their correct answers
+display the final amount person is taking home after playing the game'''
+print('Welcome to Kon Bany ga Crorepati Game')
+q1=['question1: What is the capital of Pakistan a= Islamabad b= Delhi c= Kabul d= Lahore','the correct answer is \'a=islamabad\'']
+q2=['question2: The national animal of pakistan is: a=lion b=peacock c=markhor d=snake', 'the correct answer is \'c=markhor\'']
+q3=['question3: The tallest building of world is a=eiffel tower b=burj al khalifa c=tower of pisa d=burj al arab','the correct answer is \'b=burj al khalifa\'']
+q4=['question4: Which PM of Pakistan has completed his tenure a=Nawaz Sharif b=Zulfiqar Ali Bhutto c=Benazir Bhutto d=none ','the correct answer is \'d=none\'']
+q5=['question5: The national flag of Pakistan was designed by a=Ameer ud din Kudwai b=Hafeez Jalandhari c=Ch Rehmat Ali d=Fatima Jinnah','the correct answer is \'a=Ameer ud din Kudwai\'']
+q6=['question6: The most abundant biomolecule on Earth is a=carbohydrate b=protien c=lipids d=none','the correct answer is \'a=carbohydrates\'']
+q7=['question7: The largest known viruses are a=polio virus b=pox virus c=paramyxo virus d= none','the correct answer is \'b=pox virus\'']
+q8=['question8: The Prophet Muhammad PBUH was born in a=570 AD b=580 AD c=610 AD d=490 AD','the correct answer is \'a=570 AD\'']
+r1=['you will be asked 8 questions, if you give correct answer then after every question you will be asked to continue or quit']
+r2=['if you choose to continue you will be asked next question otherwise you will quit with prize won. however if you give a wrong answer you will loose everything\n']
+print(r1)
+print(r2)
+conf=int(input('if you have read the rules press 1\n'))
+if conf==1:
+ print(q1[0:1])
+ans1=str(input(''))
+if ans1!='a':
+    print('wrong answer', q1[1:2])
+    print('game over')
+elif ans1 == 'a':
+   print('correct answer')
+   print('you have won RS1000')
+   choice=int(input('if you want to continue press 1 or to quit press 0\n'))
+   if choice==0:
+       print('game end you have win RS1000')
+   elif choice==1:
+     print(q2[0:1])
+     ans2=str(input(''))
+     if ans2 != 'c':
+         print('wrong answer', q3[1:2])
+         print('game over you lost')
+     elif ans2 == 'c':
+         print('correct answer')
+         print('you have won RS10000')
+         choice = int(input('if you want to continue press 1 or to quit press 0\n'))
+         if choice == 0:
+            print('game end you won RS10000')
+         elif choice == 1:
+           print(q3[0:1])
+           ans3 = str(input(''))
+         if ans3 != 'b':
+             print('wrong answer', q3[1:2])
+             print('game over you lost')
+         elif ans3 == 'b':
+             print('correct answer')
+             print('you have won RS50000')
+             choice = int(input('if you want to continue press 1 or to quit press 0\n'))
+             if choice == 0:
+                 print('game end you have won RS50000')
+             elif choice == 1:
+               print(q4[0:1])
+               ans4 = str(input(''))
+               if ans4 != 'd':
+                   print('wrong answer', q4[1:2])
+                   print('game over you lost')
+               elif ans4 == 'd':
+                   print('correct answer')
+                   print('you have won RS100000')
+                   choice = int(input('if you want to continue press 1 or to quit press 0\n'))
+                   if choice == 0:
+                       print('game end you have won RS 100000')
+                   elif choice == 1:
+                     print(q5[0:1])
+                     ans5 = str(input(''))
+                     if ans5 != 'a':
+                         print('wrong answer', q5[1:2])
+                         print('game over you lost')
+                     elif ans5 == 'a':
+                        print('correct answer')
+                        print('you have won RS1500000')
+                        choice = int(input('if you want to continue press 1 or to quit press 0\n'))
+                        if choice == 0:
+                           print('game end you have won Rs1500000')
+                        elif choice == 1:
+                           print(q6[0:1])
+                           ans6 = str(input(''))
+                           if ans6 != 'a':
+                                print('wrong answer', q6[1:2])
+                                print('game over you lost')
+
+                           elif ans6 == 'a':
+                               print('correct answer')
+                               print('you have won RS1000')
+                               choice = int(input('if you want to continue press 1 or to quit press 0\n'))
+                               if choice == 0:
+                                   print('game end you have won RS2500000')
+                               elif choice == 1:
+                                 print(q7[0:1])
+                                 ans7 = str(input(''))
+                                 if ans7 != 'b':
+                                     print('wrong answer', q7[1:2])
+                                     print('game over you lost')
+                                 elif ans7 == 'b':
+                                     print('correct answer')
+                                     print('you have won RS5000000')
+                                     choice = int(input('if you want to continue press 1 or to quit press 0\n'))
+                                     if choice == 0:
+                                         print('game end you have won RS5000000')
+                                     elif choice == 1:
+                                        print(q8[0:1])
+                                        ans8 = str(input(''))
+                                        if ans8 != 'a':
+                                            print('wrong answer', q8[1:2])
+                                            print('game over you lost')
+                                        elif ans8 == 'a':
+                                            print('correct answer')
+                                            print('you have won RS 10000000')
+                                            print('congratulations you are now a crorepati')
+                                            print('you are the winner \n GAME END')
+
